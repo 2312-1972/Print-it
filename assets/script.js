@@ -17,6 +17,7 @@ const slides = [
     tagLine: "Autocollants <span>avec découpe laser sur mesure</span>",
   },
 ];
+// creation de la function pour ajout via le DOM
 function bannerFirstImage() {
   const banner = document.getElementById("banner");
   // création arrow left
@@ -30,6 +31,7 @@ function bannerFirstImage() {
   imgBanner.className = "banner-img";
   imgBanner.src = "./assets/images/slideshow/slide1.jpg";
   imgBanner.alt = "arrow_right";
+
   //creation p
   const tagLine = document.createElement("p");
   tagLine.className = "banner-txt";
@@ -50,7 +52,8 @@ function bannerFirstImage() {
   banner.appendChild(arrowRight);
 }
 bannerFirstImage();
-//------déclaration des variables
+
+//------déclaration des variables globales pour interagir sur le mvt.
 const leftArrow = document.getElementById("arrow_left");
 const rightArrow = document.getElementById("arrow_right");
 const dots = document.querySelector(".dots");
