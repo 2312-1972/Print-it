@@ -17,47 +17,43 @@ const slides = [
     tagLine: "Autocollants <span>avec découpe laser sur mesure</span>",
   },
 ];
+// creation de la function pour ajout via le DOM
+function bannerFirstImage() {
+  const banner = document.getElementById("banner");
+  // création arrow left
+  const arrowLeft = document.createElement("img");
+  arrowLeft.id = "arrow_left";
+  arrowLeft.classname = "arrow_left";
+  arrowLeft.src = "./assets/images/arrow_left.png";
+  arrowLeft.alt = "arrow_left";
+  // creation image
+  const imgBanner = document.createElement("img");
+  imgBanner.className = "banner-img";
+  imgBanner.src = "./assets/images/slideshow/slide1.jpg";
+  imgBanner.alt = "arrow_right";
 
+  //creation p et span
+  const tagLine = document.createElement("p");
+  tagLine.className = "banner-txt";
+  tagLine.txt = "Impressions tous formats ";
+  const spanTagLine = document.createElement("span");
 
-// // creation de la function pour ajout via le DOM
-// function bannerFirstImage() {
-//   const banner = document.getElementById("banner");
-//   // création arrow left
-//   const arrowLeft = document.createElement("img");
-//   arrowLeft.id = "arrow_left";
-//   arrowLeft.classname = "arrow_left";
-//   arrowLeft.src = "./assets/images/arrow_left.png";
-//   arrowLeft.alt = "arrow_left";
-//   // creation image
-//   const imgBanner = document.createElement("img");
-//   imgBanner.className = "banner-img";
-//   imgBanner.src = "./assets/images/slideshow/slide1.jpg";
-//   imgBanner.alt = "arrow_right";
+  // //creation arrow right
+  const arrowRight = document.createElement("img");
+  arrowRight.id = "arrow_right";
+  arrowRight.className = "arrow_right";
+  arrowRight.src = "./assets/images/arrow_right.png";
+  arrowRight.alt = "arrow_right";
 
-//   //creation p et span
-//   const tagLine = document.createElement("p");
-//   tagLine.className = "banner-txt";
-//   // tagLine.innerText= "Impressions tous formats ";
-//   //  tagLine.txt = "Impressions tous formats ";
-//   const spanTagLine = document.createElement("span");
-//   tagLine.className = "span";
+  banner.appendChild(arrowLeft);
+  banner.appendChild(imgBanner);
+  banner.appendChild(tagLine);
+  tagLine.appendChild(spanTagLine);
+  banner.appendChild(arrowRight);
+}
+bannerFirstImage();
 
-//   // //creation arrow right
-//   const arrowRight = document.createElement("img");
-//   arrowRight.id = "arrow_right";
-//   arrowRight.className = "arrow_right";
-//   arrowRight.src = "./assets/images/arrow_right.png";
-//   arrowRight.alt = "arrow_right";
-
-//   banner.appendChild(arrowLeft);
-//   banner.appendChild(imgBanner);
-//   banner.appendChild(tagLine);
-//   tagLine.appendChild(spanTagLine);
-//   banner.appendChild(arrowRight);
-// }
-// bannerFirstImage();
-
-//------déclaration des variables globales .
+//------déclaration des variables globales pour interagir sur le mvt.
 const leftArrow = document.getElementById("arrow_left");
 const rightArrow = document.getElementById("arrow_right");
 const dots = document.querySelector(".dots");
