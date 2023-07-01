@@ -50,6 +50,7 @@ function bannerFirstImage() {
   banner.appendChild(tagLine);
   tagLine.appendChild(spanTagLine);
   banner.appendChild(arrowRight);
+ 
 }
 bannerFirstImage();
 
@@ -59,6 +60,7 @@ const rightArrow = document.getElementById("arrow_right");
 const dots = document.querySelector(".dots");
 const img = document.querySelector(".banner-img");
 const txt = document.querySelector(".banner-txt");
+banner.appendChild(dots);
 
 //---- déclaration de la variable de position a 0 point de départ du comptage de la boucle "for".
 let positionSlide = 0;
