@@ -17,7 +17,8 @@ const slides = [
     tagLine: "Autocollants <span>avec découpe laser sur mesure</span>",
   },
 ];
-        //---seconde solution possible .
+
+
 // // creation de la function pour ajout via le DOM
 // function bannerFirstImage() {
 //   const banner = document.getElementById("banner");
