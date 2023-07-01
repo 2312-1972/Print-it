@@ -35,9 +35,10 @@ function bannerFirstImage() {
   //creation p et span
   const tagLine = document.createElement("p");
   tagLine.className = "banner-txt";
-  tagLine.txt = "Impressions tous formats ";
+  tagLine.innerHTML = "Impressions tous formats ";
   const spanTagLine = document.createElement("span");
-
+   spanTagLine.innerHTML = "en boutique et en ligne";
+   
   // //creation arrow right
   const arrowRight = document.createElement("img");
   arrowRight.id = "arrow_right";
@@ -52,6 +53,7 @@ function bannerFirstImage() {
   banner.appendChild(arrowRight);
  
 }
+//---appel de la fonction bannerFirstImage
 bannerFirstImage();
 
 //------déclaration des variables globales pour interagir sur le mvt.
@@ -60,6 +62,9 @@ const rightArrow = document.getElementById("arrow_right");
 const dots = document.querySelector(".dots");
 const img = document.querySelector(".banner-img");
 const txt = document.querySelector(".banner-txt");
+
+
+//----affiliation de dots à son parent banner
 banner.appendChild(dots);
 
 //---- déclaration de la variable de position a 0 point de départ du comptage de la boucle "for".
